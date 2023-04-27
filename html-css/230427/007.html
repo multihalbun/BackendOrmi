@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복합선택자</title>
+    <style>
+        section + p {
+            border: 3px solid skyblue;
+        }
+        section :first-child {
+            border: 3px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <p>하나</p>
+    <p>둘</p>
+    <p>셋</p>
+    <section>
+        <div>section div
+            <p>section div p</p>
+        </div>
+        <p>section p1</p>
+        <p>section p2</p>
+    </section>
+    <p>넷</p>
+    <p>다섯</p>
+    <p>여섯</p>
+</body>
+</html>
