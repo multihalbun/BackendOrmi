@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h1>변수의 타입</h1>
+    <script>
+        // python : int, float, str, bool, list, tuple, dict, set, None
+        // javascript : Number(int, flaot) String(str), Boolean(bool), Array(list), Object(dict), Set(set), Map(dict)
+        console.log(typeof 10);
+        console.log(typeof 10.1);
+        console.log(typeof 'hello');
+        console.log(typeof true);
+        console.log(typeof [1, 2, 3]); // object
+        console.log(typeof {'one': 1, 'two': 2}); // object
+        console.log(typeof new Set('hello')); // object
+        console.log(typeof new Map()); // object
+        console.log(typeof function(){}); // function
+        console.log(typeof /정규표현식/g); // object
+
+        console.log(10 + '10'); // 1010
+        console.log('10' + 10); // 1010
+        console.log('10' + true); // 10true
+        console.log(true + '10'); // true10
+
+        // 형변환
+        console.log(Number('10')); // 권하지 않습니다
+        console.log(Boolean('10'));
+        console.log(String(10)); // toString 메서드가 있으면 toString을 사용하길 권해드립니다
+        console.log(parseInt(10.1)); // 이렇게 사용하길 권장합니다
+        console.log(parseInt('10.1'));
+        console.log(parseFloat(10));
+        console.log(~~10.1); // 비트연산자를 이용한 형변환, 실무에서는 권하지 않습니다
+
+    </script>
+</body>
+</html>
